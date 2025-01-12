@@ -13,7 +13,10 @@ The program uses an optimized two-pointer approach to compute the amount of trap
 <br><br>
 **Algorithm**
 <br>
-Initialize two pointers: left starting from the beginning and right starting from the end of the array.
-Keep track of the maximum height on both the left and right sides.
-Move the pointers towards each other, calculating the water trapped at each position based on the shorter boundary.
-Accumulate the total trapped water.
+1.Initialize two pointers: left starting from the beginning and right starting from the end of the array.
+<br>
+2.Keep track of the maximum height on both the left and right sides.
+<br>
+3.Move the pointers towards each other, calculating the water trapped at each position based on the shorter boundary.
+<br>
+4.Accumulate the total trapped water.
