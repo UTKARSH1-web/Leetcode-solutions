@@ -7,11 +7,11 @@ class Solution:
         while i<j:
             mid = i + (j-i)//2
             if potions[mid]*spell >=success:
-                ans = max(n - mid, ans)
+                # ans = max(n - mid, ans)
                 j = mid
             else:
                 i=mid+1
-        return ans
+        return n - i
 
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
         n = len(spells)
