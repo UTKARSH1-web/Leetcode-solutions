@@ -16,3 +16,18 @@ Return an array [a, b]:
 a: the number that is repeated
 
 b: the number that is missing
+
+# 🧠 Approach
+Flatten the 2D matrix and count occurrences of each number from 1 to n² using a frequency array.
+
+Loop through the frequency array:
+
+If a number's count is 2, it is the repeated number a.
+
+If a number's count is 0, it is the missing number b.
+
+# 🔧 Time & Space Complexity
+Time Complexity: O(n²)
+
+Space Complexity: O(n²) (for the count array)
+
