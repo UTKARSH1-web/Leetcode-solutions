@@ -6,3 +6,13 @@ One number a appears twice
 One number b is missing
 
 Your task is to find the repeated and missing numbers.
+
+# 🧾 Input
+A 2D matrix of integers of size n x n
+
+# 🎯 Output
+Return an array [a, b]:
+
+a: the number that is repeated
+
+b: the number that is missing
