@@ -8,6 +8,6 @@ class Solution:
         ans = 0
         temp = head
         while temp:
-            ans= 2*ans + temp.val
+            ans= ans<<1 | temp.val
             temp= temp.next
         return ans
