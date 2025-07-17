@@ -1,17 +1,13 @@
-class Solution:
-    def maximumLength(self, nums: List[int], k: int) -> int:
-        if not nums:
-            return 0
+class Solution(object):
+    def maximumLength(self, nums, k):
+        dp = [[0] * k for _ in range(k)]
+        max_len = 0
         
-        n = len(nums)
-        dp = [defaultdict(lambda: 1) for _ in range(n)]
-        max_length = 1
+        for num in nums:
+            for j in range(k):
+                remainder = num % k
+                dp[remainder][j] = max(dp[remainder][j], dp[j][remainder] + 1)
+                max_len = max(max_len, dp[remainder][j])
         
-        for j in range(n):
-            for i in range(j):
-                diff = (nums[j] + nums[i])%k
-                dp[j][diff] = dp[i][diff] + 1
-                max_length = max(max_length, dp[j][diff])
-        
-        return max_length
+        return max_len
         
