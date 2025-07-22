@@ -2,6 +2,9 @@
 class Solution {
 public:
     int maximumUniqueSubarray(vector<int>& nums) {
+        ios::sync_with_stdio(false);
+cin.tie(nullptr);
+
         set<long long int> a;
         long long int i=0,ans=0,j=0,curr=0,n=nums.size();
         while (j<n){
