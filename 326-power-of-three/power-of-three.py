@@ -5,4 +5,5 @@ class Solution:
         if n<=0:
             return False
         else:
-            return 1162261467 % n == 0
+            a = math.log10(n) / math.log10(3)
+            return a-int(a)==0
