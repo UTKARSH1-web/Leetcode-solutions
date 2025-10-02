@@ -4,7 +4,6 @@ class Solution:
         empty = numBottles
         exch = numexchange
         full = 0
-        # print(full,empty,exch,drunk)
         while empty>=exch:
             empty = empty - exch
             full+=1
@@ -13,5 +12,4 @@ class Solution:
                 empty+=full
                 drunk+=full
                 full=0
-            # print(full,empty,exch,drunk)
         return drunk
